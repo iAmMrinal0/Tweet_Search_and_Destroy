@@ -44,7 +44,7 @@ def index():
 def tweet():
     if g.user is None:
         return redirect(url_for('login', next=request.url))
-    search_word = request.form['tweet']
+    search_word = request.form['keyword']
     if not search_word:
         return redirect(url_for('index'))
 
