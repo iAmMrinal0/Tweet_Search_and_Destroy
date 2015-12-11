@@ -4,12 +4,9 @@
         <p>
           Hello {{ g.user.screen_name }}!
         </p>
-        <form action="{{ url_for('delete') }}"  method=post>
-        {% for tweet in tweets %}
-            <input type="checkbox" name="tweet_id" value="{{ tweet.id }}">{{ tweet.text|urlize }}<br/>
-        {% endfor %}
-            <input type=submit value="Submit">
-        </form>
+        <p>
+        Successfully deleted tweets
+        </p>
       {% else %}
         <p>
           Sign in to view your tweets and search for tweets to delete.

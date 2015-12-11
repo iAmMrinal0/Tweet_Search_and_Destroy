@@ -62,6 +62,20 @@ def tweet():
     return render_template('search.html', tweets=found)
 
 
+@app.route('/delete', methods=['POST'])
+def delete():
+    if g.user is None:
+        return redirect(url_for('login', next=request.url))
+    ids = request.form.getlist('tweet_id')
+    if not ids:
+        return redirect(url_for('index'))
+    for tweet_id in ids:
+        resp = twitter.post('statuses/destroy/{0}.json'.format(tweet_id))
+        if resp.status != 200:
+            flash("There was an error deleting tweet!")
+    return render_template('delete.html')
+
+
 @app.route('/login')
 def login():
     callback_url = url_for('oauthorized', next=request.args.get('next'))
