@@ -20,8 +20,8 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/tweet', methods=['POST'])
-def tweet():
+@app.route('/search', methods=['POST'])
+def search():
     if g.user is None:
         return redirect(url_for('login', next=request.url))
     search_word = request.form['keyword']

@@ -4,7 +4,7 @@
     <p>
       Hello {{ g.user.screen_name }}! Enter a keyword to search for in your tweets.
     </p>
-    <form action="{{ url_for('tweet') }}"  method=post>
+    <form action="{{ url_for('search') }}"  method=post>
       <p>
         <input type=text name="keyword" size=40>
         <input type=submit value="Search">
