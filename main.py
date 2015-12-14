@@ -1,6 +1,6 @@
 from flask import Flask
-from flask import g, session, request, url_for, flash
-from flask import redirect, render_template
+from flask import (flash, g, redirect, render_template,
+                   request, session, url_for)
 from twitter import twitter
 
 app = Flask(__name__)

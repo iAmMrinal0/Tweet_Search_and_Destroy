@@ -10,7 +10,7 @@
         {% endfor %}
             <input type=submit value="Submit">
         </form>
-      {% else %}
+    {% else %}
         <p>
           Sign in to view your tweets and search for tweets to delete.
         </p>
@@ -18,5 +18,5 @@
           <a href="{{ url_for('login') }}"><img src="{{
             url_for('static', filename='sign-in.png') }}" alt="sign in"></a>
         </p>
-      {% endif %}
+    {% endif %}
 {% endblock %}
