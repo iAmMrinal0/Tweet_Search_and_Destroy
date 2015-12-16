@@ -8,7 +8,7 @@
         {% for tweet in tweets %}
             <input type="checkbox" name="tweet_id" value="{{ tweet.id }}">{{ tweet.text|urlize }}<br/>
         {% endfor %}
-            <input type=submit value="Submit">
+            <input type=submit value="Delete">
         </form>
     {% else %}
         <p>
