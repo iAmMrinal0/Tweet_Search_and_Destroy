@@ -39,11 +39,6 @@ input[type="submit"] {
     border-color: #335E79;
 }
 
-input[name="openid"] {
-    background: url(openid.png) 4px no-repeat;
-    padding-left: 24px;
-}
-
 h1, h2 {
     font-weight: normal;
 }

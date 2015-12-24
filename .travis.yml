@@ -3,6 +3,7 @@ language: python
 python:
   - "3.3"
   - "3.4"
+  - "3.5"
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
@@ -12,5 +13,5 @@ script: nosetests
 
 after_success:
   - pip install pep8 pyflakes
-  - pep8 tweet.py
-  - pyflakes tweet.py
+  - pep8 main.py
+  - pyflakes main.py
