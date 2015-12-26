@@ -18,13 +18,13 @@ Set the following environment variables and you are good to go:
   - CONSUMER_KEY = *consumer key from Twitter*
   - CONSUMER_SECRET = *consumer secret from Twitter*
 
-
 ## To Do
-1. Currently only checks last 200 tweets, so add support using `page` parameter in the `user_timeline.json` query.
-2. Write tests.
-3. Add logging.
-4. Handle all exceptions.
-5. Redesign pages.
+- [ ] Currently only checks last 200 tweets, so add support using `page` parameter in the `user_timeline.json` query.  
+- [ ] Search tweets within dates, having images, or links.  
+- [ ] Write tests.  
+- [ ] Add logging.  
+- [ ] Handle all exceptions.  
+- [ ] Redesign pages.  
 
 
 ### License
